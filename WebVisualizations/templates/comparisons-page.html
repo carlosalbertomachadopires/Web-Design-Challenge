@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>
+
+        </title>
+    </head>
+    <body>
+        <ul>
+            <li><a href="{{ url_for('index') }}">Landing-page</a></li>
+            <li><a href="{{ url_for('graphic_pages') }}">Visualization-pages</a></li>
+            <li><a href="{{ url_for('analysis_page') }}">Comparisons-page</a></li>
+            <li><a href="{{ url_for ('data_page') }}">Data-page</a></li>
+
+        </ul>
+        <hr>
+        <h1>Comparisons Page</h1>
+        <p>The purpose of this project was to analyse how weather changes as you get closer to the equator. To accomplish this analysis , we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities. After assembling the dataset, we used Mataplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trendas and correlations witnessed. </p>
+        
+        <a href="https://github.com/carlosalbertomachadopires/python-api-challenge/blob/master/WeatherPy/WeatherPyhomework.ipynb">Click here for more details</a>
+        <br>
+        <br>
+        <img src="{{ url_for('static', filename='Fig1.png') }}">
+        <br>
+        <img src="{{ url_for('static', filename='Fig2.png') }}">
+        <br>
+        <img src="{{ url_for('static', filename='Fig3.png') }}">
+        <br>
+        <img src="{{ url_for('static', filename='Fig4.png') }}">
+
+    </body>
+
+    
+
+</html>

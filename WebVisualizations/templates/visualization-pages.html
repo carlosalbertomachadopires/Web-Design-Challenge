@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>
+
+        </title>
+    </head>
+    <body>
+    
+        <ul>
+            <li><a href="{{ url_for('index') }}">Landing-page</a></li>
+            <li><a href="{{ url_for('graphic_pages') }}">Visualization-pages</a></li>
+            <li><a href="{{ url_for('analysis_page') }}">Comparisons-page</a></li>
+            <li><a href="{{ url_for ('data_page') }}">Data-page</a></li>
+
+        </ul>
+        <hr>
+        <h1>Visualization Pages</h1>
+        <p>As expected, the weather becomes significantly warmer as one approaches the equator (0 Deg. Latitude). More interestingly, however, is the fact that the southern hemisphere tends to be warmer this time of the year than the northem hemisphere. This may be due to the tilt of the earth at the time of the year this data was gathered. </p>
+         
+        <a href="https://github.com/carlosalbertomachadopires/python-api-challenge/blob/master/WeatherPy/WeatherPyhomework.ipynb">Click here for more details</a>
+        <br>
+        <br>
+        <img src="{{ url_for('static', filename='Fig1.png') }}">
+        <br>
+        <img src="{{ url_for('static', filename='Fig2.png') }}">
+        <br>
+        <img src="{{ url_for('static', filename='Fig3.png') }}">
+        <br>
+        <img src="{{ url_for('static', filename='Fig4.png') }}">
+
+
+
+    </body>
+
+    
+
+    
+
+</html>
